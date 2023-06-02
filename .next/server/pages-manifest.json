@@ -1,0 +1,15 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/api/auth/[...nextauth]": "pages/api/auth/[...nextauth].js",
+  "/api/hello": "pages/api/hello.js",
+  "/api/restricted": "pages/api/restricted.js",
+  "/cart": "pages/cart.html",
+  "/checkout": "pages/checkout.html",
+  "/login": "pages/login.html",
+  "/[slug]": "pages/[slug].js",
+  "/category/[category]": "pages/category/[category].js",
+  "/": "pages/index.js",
+  "/_document": "pages/_document.js",
+  "/404": "pages/404.html"
+}
