@@ -1,151 +1,75 @@
 "use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 219;
-exports.ids = [219];
+exports.id = "pages/[slug]";
+exports.ids = ["pages/[slug]"];
 exports.modules = {
 
-/***/ 6023:
+/***/ "./pages/[slug].jsx":
+/*!**************************!*\
+  !*** ./pages/[slug].jsx ***!
+  \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ ProductDetails),
-/* harmony export */   "getServerSideProps": () => (/* binding */ getServerSideProps)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6689);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6022);
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _redux_cartSlice__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(9255);
-
-
-
-
-function ProductDetails({ deets  }) {
-    const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_2__.useDispatch)();
-    const handleAdd = (product)=>{
-        dispatch((0,_redux_cartSlice__WEBPACK_IMPORTED_MODULE_3__/* .add */ .IH)(product));
-    };
-    const [isButtonLoading, setIsButtonLoading] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(false);
-    return /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-        className: "flex flex-col lg:flex-row w-[96%] mx-auto mt-2 font-ibm",
-        children: [
-            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
-                src: deets.image,
-                alt: deets.title,
-                width: 480,
-                height: 480,
-                className: "mx-auto"
-            }),
-            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                className: "mx-auto gap-4 h-11/12 w-10/12 lg:w-7/12 my-auto py-4",
-                children: [
-                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                        className: "text-4xl mx-auto uppercase",
-                        children: deets.title
-                    }),
-                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                        children: [
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "py-3 text-xs flex flex-wrap",
-                                children: deets.category.map((e)=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                        className: " rounded-full text-black px-4 m-1 py-2 bg-secondary hover:bg-secondary-focus w-fit",
-                                        children: e
-                                    }))
-                            }),
-                            /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                className: "flex gap-2 mx-auto my-3 text-secondary ",
-                                children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("div", {
-                                    className: "border-2 border-secondary w-fit px-3 hover:scale-105 duration-200 uppercase py-1",
-                                    children: deets.size
-                                })
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "my-5 flex gap-4 font-bold font-xl mx-auto",
-                                children: [
-                                    /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                        className: " text-secondary hover:bg-primary uppercase w-fit py-2 px-3 rounded-none border-primary ease-in-out font-normal duration-100",
-                                        children: [
-                                            "₹",
-                                            deets.price
-                                        ]
-                                    }),
-                                    isButtonLoading ? /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                        className: "btn loading rounded-none bg-primary text-base-100 font-normal uppercase",
-                                        children: "loading"
-                                    }) : /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("button", {
-                                        onClick: ()=>{
-                                            setIsButtonLoading(true);
-                                            setTimeout(()=>{
-                                                handleAdd(deets);
-                                                setIsButtonLoading(false);
-                                            }, 500);
-                                        },
-                                        className: " bg-primary text-base-100 hover:bg-primary-content hover:text-primary uppercase w-[200px] py-2 rounded-none border-[1px] border-primary ease-in-out font-normal duration-100",
-                                        children: "Add to Cart"
-                                    })
-                                ]
-                            }),
-                            /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                                className: "mx-auto text-md lg:text-lg my-2 ",
-                                children: [
-                                    /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("span", {
-                                        className: "underline text-secondary",
-                                        children: "Product Description"
-                                    }),
-                                    "- ",
-                                    deets.description,
-                                    " "
-                                ]
-                            })
-                        ]
-                    })
-                ]
-            })
-        ]
-    });
-}
-async function getServerSideProps(context) {
-    const _id = context.query.slug;
-    const deets = await fetch(`https://productapi.vercel.app/api/product/find/${_id}`).then((res)=>res.json());
-    return {
-        props: {
-            deets
-        }
-    };
-}
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ ProductDetails),\n/* harmony export */   \"getServerSideProps\": () => (/* binding */ getServerSideProps)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-redux */ \"react-redux\");\n/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_redux__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _redux_cartSlice__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../redux/cartSlice */ \"./redux/cartSlice.jsx\");\n\n\n\n\nfunction ProductDetails({ deets  }) {\n    const dispatch = (0,react_redux__WEBPACK_IMPORTED_MODULE_2__.useDispatch)();\n    const handleAdd = (product)=>{\n        dispatch((0,_redux_cartSlice__WEBPACK_IMPORTED_MODULE_3__.add)(product));\n    };\n    const [isButtonLoading, setIsButtonLoading] = react__WEBPACK_IMPORTED_MODULE_1___default().useState(false);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"flex flex-col lg:flex-row w-[96%] mx-auto mt-2 font-ibm\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                src: deets.image,\n                alt: deets.title,\n                width: 480,\n                height: 480,\n                className: \"mx-auto\"\n            }, void 0, false, {\n                fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                lineNumber: 13,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"mx-auto gap-4 h-11/12 w-10/12 lg:w-7/12 my-auto py-4\",\n                children: [\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"text-4xl mx-auto uppercase\",\n                        children: deets.title\n                    }, void 0, false, {\n                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                        lineNumber: 21,\n                        columnNumber: 9\n                    }, this),\n                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"py-3 text-xs flex flex-wrap\",\n                                children: deets.category.map((e)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \" rounded-full text-black px-4 m-1 py-2 bg-secondary hover:bg-secondary-focus w-fit\",\n                                        children: e\n                                    }, void 0, false, {\n                                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                        lineNumber: 25,\n                                        columnNumber: 15\n                                    }, this))\n                            }, void 0, false, {\n                                fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                lineNumber: 23,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"flex gap-2 mx-auto my-3 text-secondary \",\n                                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                    className: \"border-2 border-secondary w-fit px-3 hover:scale-105 duration-200 uppercase py-1\",\n                                    children: deets.size\n                                }, void 0, false, {\n                                    fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                    lineNumber: 31,\n                                    columnNumber: 13\n                                }, this)\n                            }, void 0, false, {\n                                fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                lineNumber: 30,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"my-5 flex gap-4 font-bold font-xl mx-auto\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                        className: \" text-secondary hover:bg-primary uppercase w-fit py-2 px-3 rounded-none border-primary ease-in-out font-normal duration-100\",\n                                        children: [\n                                            \"₹\",\n                                            deets.price\n                                        ]\n                                    }, void 0, true, {\n                                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                        lineNumber: 36,\n                                        columnNumber: 13\n                                    }, this),\n                                    isButtonLoading ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                        className: \"btn loading rounded-none bg-primary text-base-100 font-normal uppercase\",\n                                        children: \"loading\"\n                                    }, void 0, false, {\n                                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                        lineNumber: 40,\n                                        columnNumber: 15\n                                    }, this) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"button\", {\n                                        onClick: ()=>{\n                                            setIsButtonLoading(true);\n                                            setTimeout(()=>{\n                                                handleAdd(deets);\n                                                setIsButtonLoading(false);\n                                            }, 500);\n                                        },\n                                        className: \" bg-primary text-base-100 hover:bg-primary-content hover:text-primary uppercase w-[200px] py-2 rounded-none border-[1px] border-primary ease-in-out font-normal duration-100\",\n                                        children: \"Add to Cart\"\n                                    }, void 0, false, {\n                                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                        lineNumber: 44,\n                                        columnNumber: 15\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                lineNumber: 35,\n                                columnNumber: 11\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"mx-auto text-md lg:text-lg my-2 \",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"span\", {\n                                        className: \"underline text-secondary\",\n                                        children: \"Product Description\"\n                                    }, void 0, false, {\n                                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                        lineNumber: 59,\n                                        columnNumber: 13\n                                    }, this),\n                                    \"- \",\n                                    deets.description,\n                                    \" \"\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                                lineNumber: 58,\n                                columnNumber: 11\n                            }, this)\n                        ]\n                    }, void 0, true, {\n                        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                        lineNumber: 22,\n                        columnNumber: 9\n                    }, this)\n                ]\n            }, void 0, true, {\n                fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n                lineNumber: 20,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/workspaces/ecommerce-frontend/pages/[slug].jsx\",\n        lineNumber: 12,\n        columnNumber: 5\n    }, this);\n}\nasync function getServerSideProps(context) {\n    const _id = context.query.slug;\n    const deets = await fetch(`https://ecommerce-api-wheat.vercel.app/api/product/find/${_id}`).then((res)=>res.json());\n    return {\n        props: {\n            deets\n        }\n    };\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9bc2x1Z10uanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUFBO0FBQTBCO0FBQ2dCO0FBQ0Q7QUFDMUIsU0FBU0csZUFBZSxFQUFFQyxNQUFLLEVBQUUsRUFBRTtJQUNoRCxNQUFNQyxXQUFXSix3REFBV0E7SUFFNUIsTUFBTUssWUFBWSxDQUFDQyxVQUFZO1FBQzdCRixTQUFTSCxxREFBR0EsQ0FBQ0s7SUFDZjtJQUNBLE1BQU0sQ0FBQ0MsaUJBQWlCQyxtQkFBbUIsR0FBR1QscURBQWMsQ0FBQyxLQUFLO0lBQ2xFLHFCQUNFLDhEQUFDVztRQUFJQyxXQUFVOzswQkFDYiw4REFBQ0M7Z0JBQ0NDLEtBQUtWLE1BQU1XLEtBQUs7Z0JBQ2hCQyxLQUFLWixNQUFNYSxLQUFLO2dCQUNoQkMsT0FBTztnQkFDUEMsUUFBUTtnQkFDUlAsV0FBVTs7Ozs7OzBCQUVaLDhEQUFDRDtnQkFBSUMsV0FBVTs7a0NBQ2IsOERBQUNEO3dCQUFJQyxXQUFVO2tDQUE4QlIsTUFBTWEsS0FBSzs7Ozs7O2tDQUN4RCw4REFBQ047OzBDQUNDLDhEQUFDQTtnQ0FBSUMsV0FBVTswQ0FDWlIsTUFBTWdCLFFBQVEsQ0FBQ0MsR0FBRyxDQUFDLENBQUNDLGtCQUNuQiw4REFBQ1g7d0NBQUlDLFdBQVU7a0RBQ1pVOzs7Ozs7Ozs7OzswQ0FJUCw4REFBQ1g7Z0NBQUlDLFdBQVU7MENBQ2IsNEVBQUNEO29DQUFJQyxXQUFVOzhDQUNaUixNQUFNbUIsSUFBSTs7Ozs7Ozs7Ozs7MENBR2YsOERBQUNaO2dDQUFJQyxXQUFVOztrREFDYiw4REFBQ0Q7d0NBQUlDLFdBQVU7OzRDQUF1STs0Q0FDbEpSLE1BQU1vQixLQUFLOzs7Ozs7O29DQUVkaEIsZ0NBQ0MsOERBQUNpQjt3Q0FBT2IsV0FBVTtrREFBMEU7Ozs7OzZEQUk1Riw4REFBQ2E7d0NBQ0NDLFNBQVMsSUFBTTs0Q0FDYmpCLG1CQUFtQixJQUFJOzRDQUN2QmtCLFdBQVcsSUFBTTtnREFDZnJCLFVBQVVGO2dEQUNWSyxtQkFBbUIsS0FBSzs0Q0FDMUIsR0FBRzt3Q0FDTDt3Q0FDQUcsV0FBVTtrREFDWDs7Ozs7NENBR0Y7Ozs7Ozs7MENBRUgsOERBQUNEO2dDQUFJQyxXQUFVOztrREFDYiw4REFBQ2dCO3dDQUFLaEIsV0FBVTtrREFBMkI7Ozs7OztvQ0FFcEM7b0NBQ0pSLE1BQU15QixXQUFXO29DQUFFOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBTWxDLENBQUM7QUFDTSxlQUFlQyxtQkFBbUJDLE9BQU8sRUFBRTtJQUNoRCxNQUFNQyxNQUFNRCxRQUFRRSxLQUFLLENBQUNDLElBQUk7SUFDOUIsTUFBTTlCLFFBQVEsTUFBTStCLE1BQ2xCLENBQUMsd0RBQXdELEVBQUVILElBQUksQ0FBQyxFQUNoRUksSUFBSSxDQUFDLENBQUNDLE1BQVFBLElBQUlDLElBQUk7SUFFeEIsT0FBTztRQUNMQyxPQUFPO1lBQ0xuQztRQUNGO0lBQ0Y7QUFDRixDQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcGFnZXMvW3NsdWddLmpzeD9iMmFlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tIFwicmVhY3RcIjtcclxuaW1wb3J0IHsgdXNlRGlzcGF0Y2ggfSBmcm9tIFwicmVhY3QtcmVkdXhcIjtcclxuaW1wb3J0IHsgYWRkIH0gZnJvbSBcIi4uL3JlZHV4L2NhcnRTbGljZVwiO1xyXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQcm9kdWN0RGV0YWlscyh7IGRlZXRzIH0pIHtcclxuICBjb25zdCBkaXNwYXRjaCA9IHVzZURpc3BhdGNoKCk7XHJcblxyXG4gIGNvbnN0IGhhbmRsZUFkZCA9IChwcm9kdWN0KSA9PiB7XHJcbiAgICBkaXNwYXRjaChhZGQocHJvZHVjdCkpO1xyXG4gIH07XHJcbiAgY29uc3QgW2lzQnV0dG9uTG9hZGluZywgc2V0SXNCdXR0b25Mb2FkaW5nXSA9IFJlYWN0LnVzZVN0YXRlKGZhbHNlKTtcclxuICByZXR1cm4gKFxyXG4gICAgPGRpdiBjbGFzc05hbWU9XCJmbGV4IGZsZXgtY29sIGxnOmZsZXgtcm93IHctWzk2JV0gbXgtYXV0byAgbXQtMiBmb250LWlibVwiPlxyXG4gICAgICA8aW1nXHJcbiAgICAgICAgc3JjPXtkZWV0cy5pbWFnZX1cclxuICAgICAgICBhbHQ9e2RlZXRzLnRpdGxlfVxyXG4gICAgICAgIHdpZHRoPXs0ODB9XHJcbiAgICAgICAgaGVpZ2h0PXs0ODB9XHJcbiAgICAgICAgY2xhc3NOYW1lPVwibXgtYXV0b1wiXHJcbiAgICAgIC8+XHJcbiAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXgtYXV0byAgZ2FwLTQgaC0xMS8xMiB3LTEwLzEyIGxnOnctNy8xMiAgbXktYXV0byBweS00XCI+XHJcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJ0ZXh0LTR4bCBteC1hdXRvIHVwcGVyY2FzZVwiPntkZWV0cy50aXRsZX08L2Rpdj5cclxuICAgICAgICA8ZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJweS0zIHRleHQteHMgZmxleCBmbGV4LXdyYXBcIj5cclxuICAgICAgICAgICAge2RlZXRzLmNhdGVnb3J5Lm1hcCgoZSkgPT4gKFxyXG4gICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiIHJvdW5kZWQtZnVsbCB0ZXh0LWJsYWNrIHB4LTQgbS0xIHB5LTIgYmctc2Vjb25kYXJ5IGhvdmVyOmJnLXNlY29uZGFyeS1mb2N1cyB3LWZpdFwiPlxyXG4gICAgICAgICAgICAgICAge2V9XHJcbiAgICAgICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICAgICkpfVxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImZsZXggZ2FwLTIgIG14LWF1dG8gbXktMyB0ZXh0LXNlY29uZGFyeSAgXCI+XHJcbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwiYm9yZGVyLTIgYm9yZGVyLXNlY29uZGFyeSAgdy1maXQgcHgtMyAgaG92ZXI6c2NhbGUtMTA1IGR1cmF0aW9uLTIwMCB1cHBlcmNhc2UgcHktMVwiPlxyXG4gICAgICAgICAgICAgIHtkZWV0cy5zaXplfVxyXG4gICAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJteS01IGZsZXggIGdhcC00IGZvbnQtYm9sZCBmb250LXhsICAgIG14LWF1dG9cIj5cclxuICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCIgICB0ZXh0LXNlY29uZGFyeSBob3ZlcjpiZy1wcmltYXJ5ICAgdXBwZXJjYXNlICB3LWZpdCBweS0yICBweC0zIHJvdW5kZWQtbm9uZSAgICBib3JkZXItcHJpbWFyeSBlYXNlLWluLW91dCBmb250LW5vcm1hbCBkdXJhdGlvbi0xMDBcIj5cclxuICAgICAgICAgICAgICDigrl7ZGVldHMucHJpY2V9XHJcbiAgICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgICAgICB7aXNCdXR0b25Mb2FkaW5nID8gKFxyXG4gICAgICAgICAgICAgIDxidXR0b24gY2xhc3NOYW1lPVwiYnRuIGxvYWRpbmcgcm91bmRlZC1ub25lIGJnLXByaW1hcnkgdGV4dC1iYXNlLTEwMCBmb250LW5vcm1hbCB1cHBlcmNhc2VcIj5cclxuICAgICAgICAgICAgICAgIGxvYWRpbmdcclxuICAgICAgICAgICAgICA8L2J1dHRvbj5cclxuICAgICAgICAgICAgKSA6IChcclxuICAgICAgICAgICAgICA8YnV0dG9uXHJcbiAgICAgICAgICAgICAgICBvbkNsaWNrPXsoKSA9PiB7XHJcbiAgICAgICAgICAgICAgICAgIHNldElzQnV0dG9uTG9hZGluZyh0cnVlKTtcclxuICAgICAgICAgICAgICAgICAgc2V0VGltZW91dCgoKSA9PiB7XHJcbiAgICAgICAgICAgICAgICAgICAgaGFuZGxlQWRkKGRlZXRzKTtcclxuICAgICAgICAgICAgICAgICAgICBzZXRJc0J1dHRvbkxvYWRpbmcoZmFsc2UpO1xyXG4gICAgICAgICAgICAgICAgICB9LCA1MDApO1xyXG4gICAgICAgICAgICAgICAgfX1cclxuICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cIiBiZy1wcmltYXJ5IHRleHQtYmFzZS0xMDAgaG92ZXI6YmctcHJpbWFyeS1jb250ZW50IGhvdmVyOnRleHQtcHJpbWFyeSAgdXBwZXJjYXNlICB3LVsyMDBweF0gcHktMiAgIHJvdW5kZWQtbm9uZSAgYm9yZGVyLVsxcHhdICBib3JkZXItcHJpbWFyeSBlYXNlLWluLW91dCBmb250LW5vcm1hbCBkdXJhdGlvbi0xMDBcIlxyXG4gICAgICAgICAgICAgID5cclxuICAgICAgICAgICAgICAgIEFkZCB0byBDYXJ0XHJcbiAgICAgICAgICAgICAgPC9idXR0b24+XHJcbiAgICAgICAgICAgICl9XHJcbiAgICAgICAgICA8L2Rpdj5cclxuICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwibXgtYXV0byB0ZXh0LW1kIGxnOnRleHQtbGcgICBteS0yIFwiPlxyXG4gICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9XCJ1bmRlcmxpbmUgdGV4dC1zZWNvbmRhcnlcIj5cclxuICAgICAgICAgICAgICBQcm9kdWN0IERlc2NyaXB0aW9uXHJcbiAgICAgICAgICAgIDwvc3Bhbj5cclxuICAgICAgICAgICAgLSB7ZGVldHMuZGVzY3JpcHRpb259e1wiIFwifVxyXG4gICAgICAgICAgPC9kaXY+XHJcbiAgICAgICAgPC9kaXY+XHJcbiAgICAgIDwvZGl2PlxyXG4gICAgPC9kaXY+XHJcbiAgKTtcclxufVxyXG5leHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0U2VydmVyU2lkZVByb3BzKGNvbnRleHQpIHtcclxuICBjb25zdCBfaWQgPSBjb250ZXh0LnF1ZXJ5LnNsdWc7XHJcbiAgY29uc3QgZGVldHMgPSBhd2FpdCBmZXRjaChcclxuICAgIGBodHRwczovL2Vjb21tZXJjZS1hcGktd2hlYXQudmVyY2VsLmFwcC9hcGkvcHJvZHVjdC9maW5kLyR7X2lkfWBcclxuICApLnRoZW4oKHJlcykgPT4gcmVzLmpzb24oKSk7XHJcblxyXG4gIHJldHVybiB7XHJcbiAgICBwcm9wczoge1xyXG4gICAgICBkZWV0cyxcclxuICAgIH0sXHJcbiAgfTtcclxufVxyXG4iXSwibmFtZXMiOlsiUmVhY3QiLCJ1c2VEaXNwYXRjaCIsImFkZCIsIlByb2R1Y3REZXRhaWxzIiwiZGVldHMiLCJkaXNwYXRjaCIsImhhbmRsZUFkZCIsInByb2R1Y3QiLCJpc0J1dHRvbkxvYWRpbmciLCJzZXRJc0J1dHRvbkxvYWRpbmciLCJ1c2VTdGF0ZSIsImRpdiIsImNsYXNzTmFtZSIsImltZyIsInNyYyIsImltYWdlIiwiYWx0IiwidGl0bGUiLCJ3aWR0aCIsImhlaWdodCIsImNhdGVnb3J5IiwibWFwIiwiZSIsInNpemUiLCJwcmljZSIsImJ1dHRvbiIsIm9uQ2xpY2siLCJzZXRUaW1lb3V0Iiwic3BhbiIsImRlc2NyaXB0aW9uIiwiZ2V0U2VydmVyU2lkZVByb3BzIiwiY29udGV4dCIsIl9pZCIsInF1ZXJ5Iiwic2x1ZyIsImZldGNoIiwidGhlbiIsInJlcyIsImpzb24iLCJwcm9wcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/[slug].jsx\n");
 
 /***/ }),
 
-/***/ 5184:
+/***/ "./redux/cartSlice.jsx":
+/*!*****************************!*\
+  !*** ./redux/cartSlice.jsx ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"add\": () => (/* binding */ add),\n/* harmony export */   \"clearCart\": () => (/* binding */ clearCart),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"remove\": () => (/* binding */ remove)\n/* harmony export */ });\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @reduxjs/toolkit */ \"@reduxjs/toolkit\");\n/* harmony import */ var _reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__);\n\nconst initialState = {\n    cartItems: [],\n    cartTotalQuantity: 0,\n    cartTotalAmount: 0\n};\nconst cartSlice = (0,_reduxjs_toolkit__WEBPACK_IMPORTED_MODULE_0__.createSlice)({\n    name: \"cart\",\n    initialState,\n    reducers: {\n        add (state, action) {\n            const itemIndex = state.cartItems.findIndex((item)=>item._id === action.payload._id);\n            if (itemIndex >= 0) {\n                state.cartItems[itemIndex].cartQuantity += 1;\n            } else {\n                const tempProduct = {\n                    ...action.payload,\n                    cartQuantity: 1\n                };\n                state.cartItems.push(tempProduct);\n            }\n        },\n        remove (state, action) {\n            const nextCartItems = state.cartItems.filter((cartItem)=>cartItem._id !== action.payload._id);\n            state.cartItems = nextCartItems;\n        },\n        clearCart: (state)=>{\n            state.cartItems = [];\n        }\n    }\n});\nconst { add , remove , clearCart  } = cartSlice.actions;\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (cartSlice.reducer);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZWR1eC9jYXJ0U2xpY2UuanN4LmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUErQztBQUUvQyxNQUFNQyxlQUFlO0lBQ25CQyxXQUFXLEVBQUU7SUFDYkMsbUJBQW1CO0lBQ25CQyxpQkFBaUI7QUFDbkI7QUFDQSxNQUFNQyxZQUFZTCw2REFBV0EsQ0FBQztJQUM1Qk0sTUFBTTtJQUNOTDtJQUNBTSxVQUFVO1FBQ1JDLEtBQUlDLEtBQUssRUFBRUMsTUFBTSxFQUFFO1lBQ2pCLE1BQU1DLFlBQVlGLE1BQU1QLFNBQVMsQ0FBQ1UsU0FBUyxDQUFDLENBQUNDLE9BQVNBLEtBQUtDLEdBQUcsS0FBS0osT0FBT0ssT0FBTyxDQUFDRCxHQUFHO1lBQ3JGLElBQUlILGFBQWEsR0FBRztnQkFDbEJGLE1BQU1QLFNBQVMsQ0FBQ1MsVUFBVSxDQUFDSyxZQUFZLElBQUk7WUFDN0MsT0FBTztnQkFDTCxNQUFNQyxjQUFjO29CQUFFLEdBQUdQLE9BQU9LLE9BQU87b0JBQUVDLGNBQWM7Z0JBQUc7Z0JBQzFEUCxNQUFNUCxTQUFTLENBQUNnQixJQUFJLENBQUNEO1lBQ3ZCLENBQUM7UUFHSDtRQUNBRSxRQUFPVixLQUFLLEVBQUVDLE1BQU0sRUFBRTtZQUNwQixNQUFNVSxnQkFBZ0JYLE1BQU1QLFNBQVMsQ0FBQ21CLE1BQU0sQ0FBQyxDQUFDQyxXQUFhQSxTQUFTUixHQUFHLEtBQUtKLE9BQU9LLE9BQU8sQ0FBQ0QsR0FBRztZQUM5RkwsTUFBTVAsU0FBUyxHQUFHa0I7UUFDcEI7UUFDQUcsV0FBVyxDQUFDZCxRQUFVO1lBQ3BCQSxNQUFNUCxTQUFTLEdBQUcsRUFBRTtRQUN0QjtJQUNGO0FBQ0Y7QUFDTyxNQUFNLEVBQUVNLElBQUcsRUFBRVcsT0FBTSxFQUFFSSxVQUFTLEVBQUUsR0FBR2xCLFVBQVVtQixPQUFPLENBQUM7QUFDNUQsaUVBQWVuQixVQUFVb0IsT0FBTyxFQUFDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVkdXgvY2FydFNsaWNlLmpzeD84M2NhIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IGNyZWF0ZVNsaWNlIH0gZnJvbSAnQHJlZHV4anMvdG9vbGtpdCc7XHJcblxyXG5jb25zdCBpbml0aWFsU3RhdGUgPSB7XHJcbiAgY2FydEl0ZW1zOiBbXSxcclxuICBjYXJ0VG90YWxRdWFudGl0eTogMCxcclxuICBjYXJ0VG90YWxBbW91bnQ6IDAsXHJcbn07XHJcbmNvbnN0IGNhcnRTbGljZSA9IGNyZWF0ZVNsaWNlKHtcclxuICBuYW1lOiAnY2FydCcsXHJcbiAgaW5pdGlhbFN0YXRlLFxyXG4gIHJlZHVjZXJzOiB7XHJcbiAgICBhZGQoc3RhdGUsIGFjdGlvbikge1xyXG4gICAgICBjb25zdCBpdGVtSW5kZXggPSBzdGF0ZS5jYXJ0SXRlbXMuZmluZEluZGV4KChpdGVtKSA9PiBpdGVtLl9pZCA9PT0gYWN0aW9uLnBheWxvYWQuX2lkKTtcclxuICAgICAgaWYgKGl0ZW1JbmRleCA+PSAwKSB7XHJcbiAgICAgICAgc3RhdGUuY2FydEl0ZW1zW2l0ZW1JbmRleF0uY2FydFF1YW50aXR5ICs9IDE7XHJcbiAgICAgIH0gZWxzZSB7XHJcbiAgICAgICAgY29uc3QgdGVtcFByb2R1Y3QgPSB7IC4uLmFjdGlvbi5wYXlsb2FkLCBjYXJ0UXVhbnRpdHk6IDEgIH07XHJcbiAgICAgICAgc3RhdGUuY2FydEl0ZW1zLnB1c2godGVtcFByb2R1Y3QpO1xyXG4gICAgICB9XHJcbiAgICAgIFxyXG5cclxuICAgIH0sXHJcbiAgICByZW1vdmUoc3RhdGUsIGFjdGlvbikge1xyXG4gICAgICBjb25zdCBuZXh0Q2FydEl0ZW1zID0gc3RhdGUuY2FydEl0ZW1zLmZpbHRlcigoY2FydEl0ZW0pID0+IGNhcnRJdGVtLl9pZCAhPT0gYWN0aW9uLnBheWxvYWQuX2lkKTtcclxuICAgICAgc3RhdGUuY2FydEl0ZW1zID0gbmV4dENhcnRJdGVtcztcclxuICAgIH0sXHJcbiAgICBjbGVhckNhcnQ6IChzdGF0ZSkgPT4ge1xyXG4gICAgICBzdGF0ZS5jYXJ0SXRlbXMgPSBbXTtcclxuICAgIH0sXHJcbiAgfSxcclxufSk7XHJcbmV4cG9ydCBjb25zdCB7IGFkZCwgcmVtb3ZlLCBjbGVhckNhcnQgfSA9IGNhcnRTbGljZS5hY3Rpb25zO1xyXG5leHBvcnQgZGVmYXVsdCBjYXJ0U2xpY2UucmVkdWNlcjtcclxuIl0sIm5hbWVzIjpbImNyZWF0ZVNsaWNlIiwiaW5pdGlhbFN0YXRlIiwiY2FydEl0ZW1zIiwiY2FydFRvdGFsUXVhbnRpdHkiLCJjYXJ0VG90YWxBbW91bnQiLCJjYXJ0U2xpY2UiLCJuYW1lIiwicmVkdWNlcnMiLCJhZGQiLCJzdGF0ZSIsImFjdGlvbiIsIml0ZW1JbmRleCIsImZpbmRJbmRleCIsIml0ZW0iLCJfaWQiLCJwYXlsb2FkIiwiY2FydFF1YW50aXR5IiwidGVtcFByb2R1Y3QiLCJwdXNoIiwicmVtb3ZlIiwibmV4dENhcnRJdGVtcyIsImZpbHRlciIsImNhcnRJdGVtIiwiY2xlYXJDYXJ0IiwiYWN0aW9ucyIsInJlZHVjZXIiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./redux/cartSlice.jsx\n");
+
+/***/ }),
+
+/***/ "@reduxjs/toolkit":
+/*!***********************************!*\
+  !*** external "@reduxjs/toolkit" ***!
+  \***********************************/
 /***/ ((module) => {
 
 module.exports = require("@reduxjs/toolkit");
 
 /***/ }),
 
-/***/ 6689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 module.exports = require("react");
 
 /***/ }),
 
-/***/ 6022:
+/***/ "react-redux":
+/*!******************************!*\
+  !*** external "react-redux" ***!
+  \******************************/
 /***/ ((module) => {
 
 module.exports = require("react-redux");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -156,7 +80,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [255], () => (__webpack_exec__(6023)));
+var __webpack_exports__ = (__webpack_exec__("./pages/[slug].jsx"));
 module.exports = __webpack_exports__;
 
 })();

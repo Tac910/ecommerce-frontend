@@ -51,7 +51,7 @@ export default function Home({ data }) {
 
 export async function getServerSideProps() {
   // Fetch data from external API
-  const res = await fetch(`https://productapi.vercel.app/api/product`);
+  const res = await fetch(`https://ecommerce-api-wheat.vercel.app/api/product`);
   const data = await res.json();
 
   // Pass data to the page via props

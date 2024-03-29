@@ -3,8 +3,8 @@ import GoogleProvider from 'next-auth/providers/google'
 export default NextAuth({
   providers: [
     GoogleProvider({
-      clientId: "78296806102-o2l47uhk48l1p5ms4lld0eo5sfetfvbi.apps.googleusercontent.com",
-      clientSecret: "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"
+      clientId: "447438156990-qm7iuv5e8rqi5p6v0ptedsk97n1se0ir.apps.googleusercontent.com",
+      clientSecret: "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"
 
     }),
 
